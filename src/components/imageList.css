@@ -1,0 +1,19 @@
+.image-list {
+    /*Lec 101*/
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px,1fr));
+    grid-gap:1px 10px; /*We create a gap of 0px vertically and 10px horizontally*/
+    border:2px solid rgba(194, 194, 194,0.3);
+    grid-auto-rows:10px;/*this puts a height to each grid box. we use 10 px because its pretty small so we can have more accurate span number laters*/
+}
+
+.image-list img {
+    
+    max-width:250px;    
+    grid-row-end: span 2;
+    border:5px solid rgb(233, 229, 229);
+    margin:10px;
+  
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.3);
+}
+
